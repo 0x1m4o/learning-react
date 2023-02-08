@@ -1,13 +1,61 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.content {
+  max-width: 1370px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #f1356d;
+}
+
+
+
+.card {
+  padding: 12px;
+  margin: 10px;
+  border-bottom: 1px solid #fafafa;
+  height: auto;
+  width: fit-content;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.021);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 40px;
+}
+.card:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.288);
+  border-radius: 8px;
+}
+.carousel img {
+  display: block;
+  max-width: 100%;
+  height: 445px;
+}
+
+.card img {
+  margin: 8px 0 2px 0;
+  border-radius: 20px;
+}
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834)
+      url("https://media1.giphy.com/media/HCpE3jAj6xJS5nXC8g/giphy.gif?cid=790b7611rv07c9ioiwiqgd7qwjbv1xkxik649vpdoso19e2l&rid=giphy.gif&ct=s") center
+      no-repeat;
+  background-size: 10%;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  width: 20px;
+  height: 20px;
+  color: #C4C4C4!important;
 }
